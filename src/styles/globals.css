@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #fff;
+  }
+
+  a, button, input , select {
+    outline: none;
+    text-decoration: none;
+  }
+
+}
+
+.history-search::-webkit-scrollbar {
+  width: 14px;
+}
+ 
+.history-search::-webkit-scrollbar-track {
+  box-shadow: inset 1px 0px 0px #E8E8E8, inset -1px 0px 0px #F0F0F0;
+  width: 14px;
+  display: block;
+  background:#FAFAFA;
+}
+ 
+.history-search::-webkit-scrollbar-thumb {
+  background-color: #9546EA;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  width: 3px;
+}
+
