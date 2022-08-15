@@ -8,6 +8,12 @@ Install the dependencies:
 yarn
 ```
 
+Set up the environment variables:
+
+```bash
+cp .env.example .env.development.local
+```
+
 Run the development server:
 
 ```bash
