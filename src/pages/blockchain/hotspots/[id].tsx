@@ -113,7 +113,7 @@ const HotspotDetails: React.FC = () => {
     currentHotspotActivities.rewards.forEach((item) => {
       data.push({
         hash: item.hash,
-        title: "Received mining rewards",
+        title: "Received Mining Rewards",
         time: item.time,
         subtitle: (
           <b className="ml-1 text-gray-300 text-sm font-normal">
@@ -168,8 +168,8 @@ const HotspotDetails: React.FC = () => {
           <span>
             Sent beacon{" "}
             <span className="text-gray-300 text-sm font-normal">
-              with {item.valid_count} valid and {item.invalid_count} invalid
-              witnesses
+              with {item.valid_count} Valid and {item.invalid_count} Invalid
+              Witnesses
             </span>
           </span>
         ),
