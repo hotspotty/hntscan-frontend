@@ -30,7 +30,7 @@ const HotspotsOverview: React.FC = () => {
   const data = useMemo(
     () => [
       {
-        title: "Transmit scale",
+        title: "Transmit Scale",
         description: currentHotspot?.reward_scale.toFixed(2) || 0,
         status: true,
         width: ""
@@ -108,7 +108,7 @@ const HotspotsOverview: React.FC = () => {
             series={[
               {
                 data: chartData.length ? chartData : [0, 0, 0, 0, 0, 0, 0],
-                name: "HNT Earning"
+                name: "HNT Rewards"
               }
             ]}
             days={days}

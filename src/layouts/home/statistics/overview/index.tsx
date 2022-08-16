@@ -15,7 +15,7 @@ const Overview: React.FC = () => {
   const data = useMemo(() => {
     return [
       {
-        title: "HNT price",
+        title: "HNT Price",
         description: formatterUsd(stats?.hnt_price?.price),
         tooltipMessage: "Based on data provided by CoinGecko",
         highlight: {
@@ -27,7 +27,7 @@ const Overview: React.FC = () => {
         }
       },
       {
-        title: "DC spent (30D)",
+        title: "DC Spent (30D)",
         description: `${(Math.abs(Number(stats?.dc_spent)) / 1.0e9).toFixed(
           2
         )} bn`,
@@ -39,15 +39,15 @@ const Overview: React.FC = () => {
         }
       },
       {
-        title: "Total beacons",
+        title: "Total Beacons",
         description: stats?.challenges?.toLocaleString()
       },
       {
-        title: "Last block",
+        title: "Last Block",
         description: <BlockLink blockHeight={stats?.block.height} />
       },
       {
-        title: "HNT staked",
+        title: "HNT Staked",
         description: formatLargeNumber(totalHntStaked),
         tooltipMessage: "The amount of HNT being staked by Validators",
         highlight: {
@@ -56,7 +56,7 @@ const Overview: React.FC = () => {
         }
       },
       {
-        title: "Staked validators",
+        title: "Staked Validators",
         description: stats?.validator?.count?.toLocaleString(),
         tooltipMessage: ""
       }

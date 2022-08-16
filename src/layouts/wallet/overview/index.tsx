@@ -21,7 +21,7 @@ const WalletBalanceOverview: React.FC = () => {
   return (
     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mb-10">
       <div className="mt-6 mr-20">
-        <h4 className="text-sm text-gray-300">HNT balance</h4>
+        <h4 className="text-sm text-gray-300">HNT Balance</h4>
         <h4 className="mobile:text-xl text-2xl font-bold my-1 flex items-center">
           {formatLargeNumber(processBonesBalance(currentWallet?.balance.hnt))}{" "}
           HNT
@@ -35,7 +35,7 @@ const WalletBalanceOverview: React.FC = () => {
       </div>
 
       <div className="mt-6 mr-20">
-        <h4 className="text-sm text-gray-300">MOBILE balance</h4>
+        <h4 className="text-sm text-gray-300">MOBILE Balance</h4>
         <h4 className="mobile:text-xl text-2xl font-bold my-1 flex items-center">
           {formatLargeNumber(
             processBonesBalance(currentWallet?.balance.mobile)
@@ -45,7 +45,7 @@ const WalletBalanceOverview: React.FC = () => {
       </div>
 
       <div className="mt-6 mr-20">
-        <h4 className="text-sm text-gray-300">HST balance</h4>
+        <h4 className="text-sm text-gray-300">HST Balance</h4>
         <h4 className="mobile:text-xl text-2xl font-bold my-1 flex items-center">
           {formatLargeNumber(processBonesBalance(currentWallet?.balance.hst))}{" "}
           HST
@@ -53,7 +53,7 @@ const WalletBalanceOverview: React.FC = () => {
       </div>
 
       <div className="mt-6 mr-20">
-        <h4 className="text-sm text-gray-300">DC balance</h4>
+        <h4 className="text-sm text-gray-300">DC Balance</h4>
         <h4 className="mobile:text-xl text-2xl font-bold my-1 flex items-center">
           {formatLargeNumber(currentWallet?.balance.dc)} DC
         </h4>

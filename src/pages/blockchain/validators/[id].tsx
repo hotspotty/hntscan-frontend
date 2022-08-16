@@ -36,13 +36,13 @@ const ValidatorDetails: React.FC = () => {
   const data = useMemo(
     () => [
       {
-        title: "Staking status",
+        title: "Staking Status",
         description: (
           <span className="capitalize">{currentValidator?.staked}</span>
         )
       },
       {
-        title: "Last heartbeat block",
+        title: "Last Heartbeat Block",
         description: (
           <BlockLink blockHeight={currentValidator?.last_heartbeat} />
         )
@@ -194,7 +194,9 @@ const ValidatorDetails: React.FC = () => {
                     "mobile:w-full w-4/12 mobile:flex mobile:justify-between mobile:mt-8"
                   )}
                 >
-                  <span className="text-sm flex items-center">{item.title}</span>
+                  <span className="text-sm flex items-center">
+                    {item.title}
+                  </span>
 
                   <div className="w-fit">
                     {currentValidator ? (
@@ -209,7 +211,7 @@ const ValidatorDetails: React.FC = () => {
               ))}
 
               <div className="flex flex-col w-full mobile:mt-8">
-                <p className="text-sm flex items-center">Penalty score</p>
+                <p className="text-sm flex items-center">Penalty Score</p>
                 {currentValidator ? (
                   <p className="text-2xl font-bold my-1 mobile:text-lg -mb-5">
                     {currentValidator?.penalty_score.toFixed(3)}

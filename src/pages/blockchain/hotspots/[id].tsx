@@ -286,7 +286,7 @@ const HotspotDetails: React.FC = () => {
       <Box className="mt-6">
         <>
           <div className="flex items-center">
-            <p className="text-xl font-semibold">Recent activity</p>
+            <p className="text-xl font-semibold">Recent Activity</p>
           </div>
           <div className="w-full pr-4">
             {!loading.hotspotActivities && isEmpty(allActivities) ? (
