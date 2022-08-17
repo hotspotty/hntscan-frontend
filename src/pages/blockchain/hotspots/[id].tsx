@@ -185,8 +185,12 @@ const HotspotDetails: React.FC = () => {
     currentHotspotActivities.gateway_data.forEach((item) => {
       data.push({
         hash: item.hash,
-        title: <span>{formatTransactionType(item.type)}</span>,
-        subtitle: <HotspotLink hotspotAddress={item.gateway} />,
+        title: <span>{formatTransactionType(item.type)}:</span>,
+        subtitle: (
+          <div className="lg:ml-1">
+            <HotspotLink hotspotAddress={item.gateway} />
+          </div>
+        ),
         time: item.timestamp
       });
     });
