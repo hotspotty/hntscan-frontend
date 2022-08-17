@@ -185,8 +185,12 @@ const HotspotDetails: React.FC = () => {
     currentHotspotActivities.gateway_data.forEach((item) => {
       data.push({
         hash: item.hash,
-        title: <span>{formatTransactionType(item.type)}</span>,
-        subtitle: <HotspotLink hotspotAddress={item.gateway} />,
+        title: <span>{formatTransactionType(item.type)}:</span>,
+        subtitle: (
+          <div className="lg:ml-1">
+            <HotspotLink hotspotAddress={item.gateway} />
+          </div>
+        ),
         time: item.timestamp
       });
     });
@@ -299,10 +303,10 @@ const HotspotDetails: React.FC = () => {
                   <div key={index} className="flex justify-between mt-6">
                     <div className="flex mobile:flex-col">
                       <h4 className="text-sm font-bold text-white mobile:text-sm">
-                        {activity.title}:
+                        {activity.title}
                       </h4>
 
-                      <span className="text-sm lg:ml-3">{activity.subtitle}</span>
+                      <span className="text-sm">{activity.subtitle}</span>
                     </div>
 
                     <div className="text-right text-sm whitespace-nowrap">
