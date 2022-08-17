@@ -1,6 +1,5 @@
 import Box from "components/box";
 import Breadcrumbs from "components/breadcrumbs";
-import Tooltip from "components/tooltip";
 import Hotspots from "layouts/home/statistics/hotspots";
 import Market from "layouts/home/statistics/market";
 import Overview from "layouts/home/statistics/overview";
@@ -26,26 +25,29 @@ const Statistics: React.FC = () => {
         </div>
       </div>
       <div className="mt-14 mobile:mt-8 relative">
-        <Tooltip title={"Statistics"} tooltipMessage={""} />
+        <span className="mobile:text-lg text-2xl font-bold">Statistics</span>
+
         <Box className="p-5 pt-8 mt-4">
           <Overview />
         </Box>
       </div>
       <div className="mt-14">
-        <Tooltip title={"Hotspots"} tooltipMessage={""} />
+        <span className="mobile:text-lg text-2xl font-bold">Hotspots</span>
 
         <Box className="p-5 pt-8 mt-4">
           <Hotspots />
         </Box>
       </div>
       <div className="mt-14">
-        <Tooltip title={"Market"} tooltipMessage={""} />
+        <span className="mobile:text-lg text-2xl font-bold">Market</span>
+
         <Box className="p-5 pt-8 mt-4">
           <Market />
         </Box>
       </div>
       <div className="mt-14">
-        <Tooltip title={"Validators"} tooltipMessage={""} />
+        <span className="mobile:text-lg text-2xl font-bold">Validators</span>
+
         <Box className="p-5 pt-8 mt-4">
           <Validators />
         </Box>
